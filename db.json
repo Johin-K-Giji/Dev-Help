@@ -1,0 +1,227 @@
+{
+    "gitCommands": [
+      {
+        "title": "Initialize Git",
+        "command": "git init",
+        "description": "Initializes a new Git repository in the current directory, making it ready for version control.",
+        "scenario": "Use this when starting a new project locally that you want to track with Git."
+      },
+      {
+        "title": "Clone Repository",
+        "command": "git clone <repository_url>",
+        "description": "Clones an existing repository from a remote source, creating a local copy.",
+        "scenario": "Use this when you want to work with an existing project hosted on a service like Bitbucket."
+      },
+      {
+        "title": "Check Status",
+        "command": "git status",
+        "description": "Displays the current state of the working directory and staging area.",
+        "scenario": "Use this to check which changes have been staged, modified, or are untracked."
+      },
+      {
+        "title": "Add Files to Staging Area",
+        "command": "git add <file_or_folder>",
+        "description": "Adds files to the staging area, preparing them to be committed.",
+        "scenario": "Use this when you’ve made changes to a file and want to include them in the next commit."
+      },
+      {
+        "title": "Commit Changes",
+        "command": "git commit -m 'message'",
+        "description": "Records changes to the repository with a descriptive commit message.",
+        "scenario": "Use this to commit your changes after adding them to the staging area."
+      },
+      {
+        "title": "View Commit History",
+        "command": "git log",
+        "description": "Shows the commit history for the current branch.",
+        "scenario": "Use this to review previous commits and their associated changes."
+      },
+      {
+        "title": "Create New Branch",
+        "command": "git branch <branch_name>",
+        "description": "Creates a new branch in your local repository.",
+        "scenario": "Use this to start working on a new feature or bug fix."
+      },
+      {
+        "title": "List Branches",
+        "command": "git branch",
+        "description": "Lists all branches in the current repository.",
+        "scenario": "Use this to see which branches are available for switching or merging."
+      },
+      {
+        "title": "Switch Branches",
+        "command": "git checkout <branch_name>",
+        "description": "Switches to a different branch.",
+        "scenario": "Use this when you want to switch your working directory to another branch."
+      },
+      {
+        "title": "Create and Switch Branch",
+        "command": "git checkout -b <branch_name>",
+        "description": "Creates a new branch and switches to it immediately.",
+        "scenario": "Use this when you need to create a new branch and start working on it right away."
+      },
+      {
+        "title": "Delete Branch",
+        "command": "git branch -d <branch_name>",
+        "description": "Deletes a branch in your local repository.",
+        "scenario": "Use this after merging a feature branch to clean up unnecessary branches."
+      },
+      {
+        "title": "Push Branch to Remote",
+        "command": "git push origin <branch_name>",
+        "description": "Pushes a branch and its commits to the remote repository.",
+        "scenario": "Use this to share your local branch with others on Bitbucket or another remote repository."
+      },
+      {
+        "title": "Pull Changes from Remote",
+        "command": "git pull origin <branch_name>",
+        "description": "Fetches changes from the remote repository and merges them into your local branch.",
+        "scenario": "Use this when you need to integrate the latest changes from Bitbucket or another remote source."
+      },
+      {
+        "title": "Fetch Changes from Remote",
+        "command": "git fetch",
+        "description": "Fetches changes from the remote repository but does not merge them into your local branch.",
+        "scenario": "Use this when you want to see updates in the remote repository without affecting your local work."
+      },
+      {
+        "title": "Merge Branches",
+        "command": "git merge <branch_name>",
+        "description": "Merges changes from another branch into the current branch.",
+        "scenario": "Use this to integrate changes from another branch, such as a feature branch, into the main branch."
+      },
+      {
+        "title": "View Remote Repositories",
+        "command": "git remote -v",
+        "description": "Lists all remote repositories associated with the local repository.",
+        "scenario": "Use this to verify or check the remote repositories linked to your project."
+      },
+      {
+        "title": "Set Remote Repository",
+        "command": "git remote add origin <repository_url>",
+        "description": "Adds a remote repository to your local repository.",
+        "scenario": "Use this when you want to link your local project to a Bitbucket repository for the first time."
+      },
+      {
+        "title": "Remove Remote Repository",
+        "command": "git remote remove origin",
+        "description": "Removes the connection to a remote repository.",
+        "scenario": "Use this when you no longer want to push or pull from a remote repository."
+      },
+      {
+        "title": "Revert to Previous Commit",
+        "command": "git revert <commit_hash>",
+        "description": "Reverts a commit by creating a new commit that undoes the changes of a specific commit.",
+        "scenario": "Use this when you need to undo the effects of a commit while preserving history."
+      },
+      {
+        "title": "Tag a Commit",
+        "command": "git tag <tag_name>",
+        "description": "Adds a tag to a specific commit, commonly used for versioning.",
+        "scenario": "Use this when you want to label a commit as a release version."
+      },
+      {
+        "title": "Delete Tag",
+        "command": "git tag -d <tag_name>",
+        "description": "Deletes a tag from your local repository.",
+        "scenario": "Use this when you no longer need a specific tag."
+      },
+      {
+        "title": "Push Tags to Remote",
+        "command": "git push origin --tags",
+        "description": "Pushes all local tags to the remote repository.",
+        "scenario": "Use this to share tags, such as release versions, with your team."
+      },
+      {
+        "title": "Undo Local Changes",
+        "command": "git checkout -- <file>",
+        "description": "Reverts a file to the last committed state, discarding any changes.",
+        "scenario": "Use this when you want to undo changes to a file before committing them."
+      },
+      {
+        "title": "Stash Changes",
+        "command": "git stash",
+        "description": "Temporarily saves your local changes to a stash and restores the working directory to the last commit.",
+        "scenario": "Use this when you need to switch branches without committing incomplete work."
+      },
+      {
+        "title": "Apply Stash",
+        "command": "git stash apply",
+        "description": "Restores changes from a stash back into your working directory.",
+        "scenario": "Use this when you're ready to continue work on a set of changes you stashed earlier."
+      },
+      {
+        "title": "Delete Stash",
+        "command": "git stash drop",
+        "description": "Removes a specific stash entry.",
+        "scenario": "Use this when you no longer need the stashed changes."
+      },
+      {
+        "title": "Show Stashed Changes",
+        "command": "git stash show",
+        "description": "Shows the changes in the most recent stash.",
+        "scenario": "Use this to review the changes you saved in a stash before applying or dropping them."
+      },
+      {
+        "title": "Clean Untracked Files",
+        "command": "git clean -f",
+        "description": "Removes untracked files from the working directory.",
+        "scenario": "Use this to clean up files that are not being tracked by Git, especially after stashing or merging."
+      },
+      {
+        "title": "Diff Between Commits",
+        "command": "git diff <commit_hash1> <commit_hash2>",
+        "description": "Shows the differences between two commits.",
+        "scenario": "Use this when you need to compare two commits and see what has changed."
+      },
+      {
+        "title": "Diff Between Branches",
+        "command": "git diff <branch1> <branch2>",
+        "description": "Shows the differences between two branches.",
+        "scenario": "Use this when you want to compare the content of two branches before merging."
+      },
+      {
+        "title": "Show Commit Changes",
+        "command": "git show <commit_hash>",
+        "description": "Shows detailed information about a specific commit.",
+        "scenario": "Use this to inspect a particular commit's changes, including diffs and metadata."
+      },
+      {
+        "title": "Log with Graph",
+        "command": "git log --graph --oneline",
+        "description": "Displays the commit history as a graph, with each commit represented on a single line.",
+        "scenario": "Use this when you need a quick visual representation of the branch structure and history."
+      },
+      {
+        "title": "Show Remote Branches",
+        "command": "git branch -r",
+        "description": "Lists all remote branches.",
+        "scenario": "Use this to see which branches are available on the remote repository (e.g., Bitbucket)."
+      },
+      {
+        "title": "Set Upstream for a Branch",
+        "command": "git push --set-upstream origin <branch_name>",
+        "description": "Sets the default remote and branch for the current branch.",
+        "scenario": "Use this to configure your local branch to track a remote branch on Bitbucket."
+      },
+      {
+        "title": "Reset Branch to Commit",
+        "command": "git reset --hard <commit_hash>",
+        "description": "Resets the current branch to a specific commit, discarding any changes.",
+        "scenario": "Use this when you want to revert to a previous commit and discard any new work since then."
+      },
+      {
+        "title": "Undo Last Commit",
+        "command": "git reset --soft HEAD~1",
+        "description": "Moves the current branch back by one commit, keeping changes in the working directory.",
+        "scenario": "Use this when you accidentally commit something and want to rework the changes before committing again."
+      },
+      {
+        "title": "Rebase Branch",
+        "command": "git rebase <branch_name>",
+        "description": "Re-applies commits from the current branch onto another branch.",
+        "scenario": "Use this to incorporate changes from another branch while maintaining a cleaner history."
+      }
+    ]
+  }
+  
